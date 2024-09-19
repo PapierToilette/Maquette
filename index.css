@@ -18,3 +18,8 @@
 #titre_header{
     width: 100px;
 }
+
+a{
+    text-decoration: none;
+    text-decoration-color: white;
+}
