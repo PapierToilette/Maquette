@@ -1,4 +1,19 @@
 #logo_partager{
-    width: 10px;
+    width: 28px;
+    height: 32px;
+}
 
+#logo_loupe{
+    width: 50px;
+    height: 39px;
+}
+
+.bouton_header{
+    width: 100px;
+    height: 66px;
+    border: none;
+}
+
+#titre_header{
+    width: 100px;
 }
