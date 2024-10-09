@@ -1,6 +1,40 @@
+body{
+    margin: 0px 0px 0px 0px;
+}
+
 #logo_partager{
     width: 28px;
     height: 32px;
+}
+
+
+.page1{
+    background-image:url("img/fond1.jpg");
+    background-size: cover;
+    width: 1880px;
+    height: 900px;
+    margin: 19px 20px 19px 20px;
+}
+
+#titre_header{
+    margin: 150px;
+    font-size: 50px;
+    font-family: sans-serif;
+    color: white;
+}
+
+.bouton_header{
+    width: 130px;
+    height: 66px;
+    border: none;
+    margin: 50px 0px 15px 0px;
+    background-color: transparent;
+    background-repeat: no-repeat;
+    cursor: pointer;
+    overflow: hidden;
+    outline: none;
+    color: white;
+    font-family: sans-serif;
 }
 
 #logo_loupe{
@@ -9,51 +43,28 @@
     margin-left: 250px;
 }
 
-.page1{
-    background-image:url("img/fond_1.webp");
-    width: 1850px;
-    height: 900px;
-    margin-top: 20px;
-    margin-left: 19px;
-}
-
-.bouton_header{
-    width: 130px;
-    height: 66px;
-    border: none;
-    margin: 50px 15px 15px 15px;
-    background-color: transparent;
-    background-repeat: no-repeat;
-    cursor: pointer;
-    overflow: hidden;
-    outline: none;
-}
-
-#titre_header{
-    margin: 175px;
-    font-size: 50px;
-    font-family: ZonaPro;
-}
-
-a{
-    text-decoration: none;
-    text-decoration-color: white;
-}
-
-.Boutonp1{
-    margin-top: 235px;
-    font-size: 20px;
-    padding: 30px;
-    border: none;
-    background-color: transparent;
-    background-repeat: no-repeat;
-    cursor: pointer;
-    overflow: hidden;
-    outline: none;
-}
-
 #texte_background{
     margin-top: 200px;
     margin-left: 150px;
     font-size: 75px;
+    color: white;
+    font-family: sans-serif;
+}
+
+.button{
+    display: flex;
+}
+
+.Boutonp1{
+    margin-top: 102.5px;
+    font-size: 20px;
+    padding: 55px 70px;
+    border: none;
+    background: #FFFFFF 0% 0% no-repeat padding-box;;
+    cursor: pointer;
+    overflow: hidden;
+    outline: none;
+    color: black;
+    font-family: sans-serif;
+    display: inline-block;    
 }
