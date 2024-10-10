@@ -39,19 +39,23 @@ const colors = [
 let txt_index = 0;
 
 const handleButtonClick = (index) => {
-    if (txt_index === index) {
-        buttons[index].style.backgroundColor('white');
-        texte_background.innerHTML = texts[0];
-        changeBackgroundImage(imgs[0]); 
-        txt_index = 0;
-    } else {
-        buttons[index].style.backgroundColor('white');
-        texte_background.innerHTML = texts[index];
-        changeBackgroundImage(imgs[index]); 
-        txt_index = index;
-        buttons[index].style.backgroundColor(colros[index]);
+    
+    if (txt_index !== 0) {
+        buttons[txt_index - 1].style.backgroundColor = 'white'; 
     }
-};
+  
+    if (txt_index === index) {
+        buttons[index - 1].style.backgroundColor = 'white';
+        texte_background.innerHTML = texts[0];            
+        changeBackgroundImage(imgs[0]);                  
+        txt_index = 0;                                      
+    } else { 
+        texte_background.innerHTML = texts[index];        
+        changeBackgroundImage(imgs[index]);                 
+        txt_index = index;                                
+        buttons[index - 1].style.backgroundColor = colors[index - 1]; 
+    }
+}
 
 buttonP1_1.addEventListener('click', () => handleButtonClick(1));
 buttonP1_2.addEventListener('click', () => handleButtonClick(2));
