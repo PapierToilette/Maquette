@@ -7,11 +7,16 @@ const buttons = [
 
 const texte_background =  document.getElementById('texte_background');
 
+
 const page1 = document.querySelector('.page1');
 
 function changeBackgroundImage(ImageUrl) {
     page1.style.backgroundImage = `url(${ImageUrl})`;
 }
+
+/* Version raccourci
+const changeBackgroundImage = ImageUrl => page1.style.backgroundImage = `url(${ImageUrl})`;
+*/
 
 const texts = [
     "ÉVOLUER, PERFORMER, <br> TRANSFORMER, <br> PENSER EN ATHLÈTE!", // index 0
@@ -52,12 +57,11 @@ const handleButtonClick = (index) => {
     } else { 
         texte_background.innerHTML = texts[index];        
         changeBackgroundImage(imgs[index]);                 
-        txt_index = index;                                
+        txt_index = index;                              
         buttons[index - 1].style.backgroundColor = colors[index - 1]; 
     }
 }
 
-buttonP1_1.addEventListener('click', () => handleButtonClick(1));
-buttonP1_2.addEventListener('click', () => handleButtonClick(2));
-buttonP1_3.addEventListener('click', () => handleButtonClick(3));
-buttonP1_4.addEventListener('click', () => handleButtonClick(4));
+for (let i = 0; i < buttons.length; i++) {
+    buttons[i].addEventListener('click', () => handleButtonClick(i+1));
+}
