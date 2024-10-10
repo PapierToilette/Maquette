@@ -9,8 +9,8 @@ const texte_background =  document.getElementById('texte_background');
 
 const page1 = document.querySelector('.page1');
 
-function changeBackgroundImage(newImageUrl) {
-    page1.style.backgroundImage = `url(${newImageUrl})`;
+function changeBackgroundImage(ImageUrl) {
+    page1.style.backgroundImage = `url(${ImageUrl})`;
 }
 
 const texts = [
@@ -30,10 +30,10 @@ const imgs = [
 ];
 
 const colors = [
-    'red',
     'cyan',
-    'green',
-    'yellow'
+    'red',
+    'yellow',
+    'green'
 ];
 
 let txt_index = 0;
