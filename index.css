@@ -20,8 +20,8 @@ body{
 }
 
 #titre_header{
-    margin: 150px;
-    font-size: 50px;
+    margin: 125px;
+    font-size: 70px;
     font-family: sans-serif;
     color: white;
 }
@@ -30,7 +30,7 @@ body{
     width: 130px;
     height: 66px;
     border: none;
-    margin: 50px 0px 15px 0px;
+    margin: 75px 0px 0px 15px;
     background-color: transparent;
     background-repeat: no-repeat;
     cursor: pointer;
@@ -42,8 +42,8 @@ body{
 
 #texte_background{
     margin-top: 200px;
-    margin-left: 150px;
-    font-size: 75px;
+    margin-left: 125px;
+    font-size: 100px;
     color: white;
     font-family: sans-serif;
 }
@@ -51,7 +51,7 @@ body{
 .Boutonp1{
     margin-top: 102.5px;
     font-size: 20px;
-    padding: 55px 70px;
+    padding: 45px 75px;
     border: none;
     background: #FFFFFF 0% 0% no-repeat padding-box;;
     cursor: pointer;

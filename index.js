@@ -5,6 +5,12 @@ const buttonP1_4 = document.getElementById('buttonP1_4');
 
 const texte_background =  document.getElementById('texte_background');
 
+const page1 = document.querySelector('.page1');
+
+function changeBackgroundImage(newImageUrl) {
+    page1.style.backgroundImage = `url(${newImageUrl})`;
+}
+
 /* CODE PAS OPTIMISÉ
 
 const txtP1_1 = "ÉVOLUER, PERFORMER, <br> TRANSFORMER, <br> PENSER EN ATHLÈTE!";
@@ -78,14 +84,24 @@ const texts = [
     "ACCÉLÉRER <br> LA TRANSFORMATION <br> DIGITALE & RSE"           // index 4
 ];
 
+const imgs = [
+    'img/fond1.jpg',
+    'img/fond2.jpg',
+    'img/fond3.jpg',
+    'img/fond4.jpg',
+    'img/fond5.jpg'
+];
+
 let txt_index = 0;
 
 const handleButtonClick = (index) => {
     if (txt_index === index) {
         texte_background.innerHTML = texts[0];
+        changeBackgroundImage(imgs[0]); 
         txt_index = 0;
     } else {
         texte_background.innerHTML = texts[index];
+        changeBackgroundImage(imgs[index]); 
         txt_index = index;
     }
 };
