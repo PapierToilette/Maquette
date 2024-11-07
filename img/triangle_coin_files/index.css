@@ -103,16 +103,8 @@ body{
     margin-right: 0px;
 }
 
-#img_blanc_coin{
-    position: absolute;
-    right: 298px;
-    transform: rotate(240deg);
-    top: -20.8px;
-    height: 35px;
-}
-
-#t1coin{
-    color: blue;
+#img_blacn_coin{
+    
 }
 
 
