@@ -62,6 +62,6 @@ const handleButtonClick = (index) => {
     }
 }
 
-for (let i = 0; i < buttons.length; i++) {
-    buttons[i].addEventListener('click', () => handleButtonClick(i+1));
+for (let i = 1; i < buttons.length; i++) {
+    buttons[i].addEventListener('click', () => handleButtonClick(i));
 }
